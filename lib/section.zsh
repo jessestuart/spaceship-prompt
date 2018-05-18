@@ -13,18 +13,26 @@ spaceship::section() {
 
   [[ -z $3 && -z $4 ]] && content=$2 prefix=''
 
-  echo -n "%{%B%}" # set bold
+  if [[ $spaceship_prompt_opened == true ]] && [[ $SPACESHIP_PROMPT_DISABLE_BOLD == false ]]; then
+    echo -n "%{%B%}" # set bold
+  fi
   if [[ $spaceship_prompt_opened == true ]] && [[ $SPACESHIP_PROMPT_PREFIXES_SHOW == true ]]; then
     echo -n "$prefix"
   fi
   spaceship_prompt_opened=true
   echo -n "%{%b%}" # unset bold
 
-  echo -n "%{%B$color%}" # set color
+  if [[ $SPACESHIP_PROMPT_DISABLE_BOLD == true ]]; then
+    echo -n "%{%b$color%}" # set color
+  else
+    echo -n "%{%B$color%}" # set color
+  fi
   echo -n "$content"     # section content
   echo -n "%{%b%f%}"     # unset color
 
-  echo -n "%{%B%}" # reset bold, if it was diabled before
+  if [[ $spaceship_prompt_opened == true ]] && [[ $SPACESHIP_PROMPT_DISABLE_BOLD == false ]]; then
+    echo -n "%{%B%}" # reset bold, if it was diabled before
+  fi
   if [[ $SPACESHIP_PROMPT_SUFFIXES_SHOW == true ]]; then
     echo -n "$suffix"
   fi
