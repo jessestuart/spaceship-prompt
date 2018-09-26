@@ -1,7 +1,7 @@
 {
   "name": "@jesses/spaceship-prompt",
   "description": "A Zsh prompt for Astronauts.",
-  "version": "3.5.0",
+  "version": "3.6.0",
   "author": [
     "Denys Dovhan <email@denysdovhan.com> (http://denysdovhan.com/)",
     "Jesse Stuart <hi@jessestuart.com> (https://jesses.io)"
