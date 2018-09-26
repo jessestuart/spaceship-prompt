@@ -1,5 +1,5 @@
 {
-  "name": "spaceship-prompt",
+  "name": "@jesses/spaceship-prompt",
   "version": "3.5.0",
   "description": "A Zsh prompt for Astronauts.",
   "files": [
@@ -24,21 +24,18 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/denysdovhan/spaceship-prompt.git"
+    "url": "git+https://github.com/jessestuart/spaceship-prompt.git"
   },
-  "keywords": [
-    "prompt",
-    "shell",
-    "zsh",
-    "zsh-theme",
-    "terminal"
+  "keywords": ["prompt", "shell", "zsh", "zsh-theme", "terminal"],
+  "author": [
+    "Denys Dovhan <email@denysdovhan.com> (http://denysdovhan.com/)",
+    "Jesse Stuart <hi@jessestuart.com> (https://jesses.io)"
   ],
-  "author": "Denys Dovhan <email@denysdovhan.com> (http://denysdovhan.com/)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/denysdovhan/spaceship-prompt/issues"
+    "url": "https://github.com/jessestuart/spaceship-prompt/issues"
   },
-  "homepage": "https://github.com/denysdovhan/spaceship-prompt#readme",
+  "homepage": "https://github.com/jessestuart/spaceship-prompt#readme",
   "devDependencies": {
     "gh-pages": "^1.1.0",
     "gitbook-cli": "^2.3.2",
@@ -46,6 +43,7 @@
     "gitbook-plugin-edit-link": "^2.0.2",
     "gitbook-plugin-github": "^2.0.0",
     "gitbook-plugin-github-buttons": "^3.0.0",
-    "gitbook-plugin-prism": "^2.3.0"
+    "gitbook-plugin-prism": "^2.3.0",
+    "semantic-release": "^15.9.16"
   }
 }
